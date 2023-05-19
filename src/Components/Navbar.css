@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.nav-logo{
+    max-width: 200px;
+    height: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+/* .nav-search{
+    width: 30%;
+    height: 40%;
+    color: white;
+    background: black;
+    border: 1px solid #00fbfb;
+    outline: none;
+    border-radius: 15px;
+    text-align: center;
+} */
+
+.nav-btn{
+    height: 40%;
+    width: 10%;
+    border-radius: 15px;
+    color: black;
+    background-color: #00fbfb;
+    border: none; 
+    outline: none;
+    transition: 0.4s;
+}
+
+.nav-btn:hover{
+    background-color: #ff0084;
+    cursor: pointer;
+}
+
+.home,
+.discover,
+.cart,
+.wishlist,
+.sign-in{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.home{
+    color: #7d12ff;
+}
+.discover{
+    color: #c210fe;
+}
+.cart{
+    color: #fc2c2c;
+}
+.wishlist{
+    color: #00cdcd;
+}
+.sign-in{
+  border: 3px solid #5b21b6;
+  color: #5b21b6;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, transparent 50%, #5b21b6 50%);
+  background-size: 250%;
+  background-position: 100%;
+  transition: 0.8s;
+}
+
+.home:hover{
+    border: 0.125rem solid #7d12ff;
+    border-radius: 20px;
+    color: #7d12ff;
+    text-shadow: 0 0 #e2dfd2, 0 0 0.125em #7d12ff;
+    box-shadow: 0 0 0.5rem #7d12ff;
+}
+
+.discover:hover{
+    border: 0.125rem solid #c210fe;
+    border-radius: 20px;
+    color: #c210fe;
+    text-shadow: 0 0 #e2dfd2, 0 0 0.125em #c210fe;
+    box-shadow: 0 0 0.5rem #c210fe;
+}
+
+.cart:hover{
+    border: 0.125rem solid #fc2c2c;
+    border-radius: 20px;
+    color: #fc2c2c;
+    text-shadow: 0 0 #e2dfd2, 0 0 0.125em #fc2c2c;
+    box-shadow: 0 0 0.5rem #fc2c2c;
+}
+
+.wishlist:hover{
+    border: 0.125rem solid #00cdcd;
+    border-radius: 20px;
+    color: #00cdcd;
+    text-shadow: 0 0 #e2dfd2, 0 0 0.125em #00cdcd;
+    box-shadow: 0 0 0.5rem #00cdcd;
+}
+
+.sign-in:hover{
+    color: white;
+    background-position: 0%;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 786px){
+    .nav-logo{
+        display: flex;
+        position: relative;
+        top: 15px;
+    }
+    .nav-logo img{
+        position: absolute;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none; 
+        background-color: #5b21b6;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,
+    .discover,
+    .cart,
+    .wishlist,
+    .sign-in{
+        color: #e2dfd2;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #00cdcd;
+        border: none; 
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+
+}
+
