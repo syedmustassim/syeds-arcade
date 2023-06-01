@@ -1,0 +1,110 @@
+/* .layout {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.flex-container{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: grid;
+  }
+
+  .grid {
+    display: grid;
+    gap: 9rem;
+  }
+
+  .grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.card {
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 10px solid white;
+    position: relative;
+    margin: 5rem;
+    transition: 0.8s;
+  }
+  
+  .card-img {
+    height: 100%; /* height and width 100% positions the whole image inside my card based on the card dimensions*/
+    width: 100%;
+    object-fit: cover; /* makes the image sit properly in the specified dimensions. If you remove this, the image will be distorted based on its original dimensions */
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    height: 100%;
+    width: 100%;
+    /* top: 0 */
+    /* right: -100% */
+    bottom: -70%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 50px;
+    /* padding-top: -100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+  }
+
+  .card-body-link{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .card:hover{
+    border: 10px solid rgb(1, 240, 253);
+    cursor: pointer;
+  }
+  
+  .card:hover .card-body {    /*right: 0;*/
+    bottom: 0;
+  }
+  
+  .card-heading {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: -50px;
+  }
+  
+  .card-sub-heading {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .card-info {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px 0;
+    font-weight: 500;
+  }
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-card{
+    width: 100px;
+    outline: none;
+    border: none; 
+    background-color: #a5b4fc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

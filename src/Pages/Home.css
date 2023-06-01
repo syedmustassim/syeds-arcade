@@ -1,0 +1,158 @@
+.home-body{
+    height: 1250px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+.home-img{
+    width: 100%;
+    filter: opacity(60%);
+    /* filter: blur(2px); */
+    height: 500px;
+}
+
+.img-text-section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 25%;
+    /* padding: 1rem; */
+    font-weight: bolder;
+    font-family: "WestgateRegular";
+    font-size: 50px;
+    color: navajowhite;
+}
+
+.img-text-section input{
+    width: 60%;
+    height: 40px;
+    border: 2px solid white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.173);
+    margin: 2.5rem;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: white;
+}
+
+@media screen and (max-width: 786px){
+    .home-body{
+        width: 100vw;
+    }
+    .img-text-section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 22px;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        padding: 0;
+    }
+}
+
+/* H1 */
+
+.home-body .heading{
+    color: #00cdcd;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    border: 1px solid #00cdcd;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+/* Games card CSS */
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-card {
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 10px solid white;
+    position: relative;
+    margin: 5rem;
+    transition: 0.5s;
+  }
+  
+  .home-card-img {
+    height: 100%; /* height and width 100% positions the whole image inside my card based on the card dimensions*/
+    width: 100%;
+    object-fit: cover; /* makes the image sit properly in the specified dimensions. If you remove this, the image will be distorted based on its original dimensions */
+    border-radius: 10px;
+  }
+  
+  .home-card-body{
+    height: 100%;
+    width: 100%;
+    /* top: 0 */
+    /* right: -100% */
+    bottom: -72%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+  }
+  
+  .home-card:hover .home-card-body {
+    /*right: 0;*/
+    bottom: 0;
+  }
+
+  .home-card:hover{
+    border: 10px solid rgb(236, 40, 40);
+    cursor: pointer;
+  }
+  
+  .home-card-heading {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .home-card-sub-heading {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .home-card-info {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px 0;
+    font-weight: 500;
+  }
+  
+  .home-card-btn {
+    color: #003e39;
+    background: #f9f5a4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+

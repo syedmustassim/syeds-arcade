@@ -1,0 +1,38 @@
+.discover-body{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+
+.discover-heading{
+    text-align: center;
+    /* padding: 1rem; */
+    font-size: 100px;
+    color: #1097feba;
+    text-transform: capitalize;
+}
+
+/* added */
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 9rem;
+  }
+
+  /* filter column style */
+
+.grid-filter-column{
+    grid-template-columns: 0.2fr 1fr;
+} 
+/* 
+
+.main-product{
+    display: grid;
+
+} */

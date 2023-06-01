@@ -1,0 +1,160 @@
+.main-wrapper{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: sticky;
+    top: 0;
+
+}
+
+.main-wrapper h1{
+    font-size: 30px;
+    padding-left: 25px;
+    margin-bottom: -3rem;
+}
+
+.filter-search{
+    margin-bottom: -3rem;
+}
+
+.filter-search input{
+    margin: 2rem;
+    padding: 0.4rem;
+    font-size: 20px;
+    border: 1px solid black;
+    outline: none;
+    background-color:  	#525252;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: black;
+}
+
+.filter-category{
+    margin-top: -0.75rem;
+}
+.filter-category h3{
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+.filter-category div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+    padding: 30px;
+}
+
+.filter-category button{
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.filter-category button:hover{
+    color: red;
+
+}
+
+.filter-category button:focus{
+    color: #00cdcd;
+    border: 1px solid #00cdcd;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.filter-price{
+    margin-top: -3rem;
+}
+.filter-price h3{
+    padding-left: 25px;
+    font-size: 25px;
+    color: #1097feba;
+    padding-bottom: 15px;
+}
+
+.filter-price h4{
+    padding-left: 25px;
+    font-size: 25px;
+    color: #1097feba;
+    padding-bottom: 10px;
+}
+
+.filter-price input{
+    margin-left: 25px;
+}
+
+.filter-three{
+    padding-left: 25px;
+    margin-top: -2rem;
+}
+
+.filter-three h3{
+    color: #00cdcd;
+    font-size: 25px;
+}
+
+.filter-three label{
+    color: #00cdcd;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.filter-rating-checkbox{
+    margin-top: -20px;
+    font-size:20px;
+    padding-left: 25px;
+}
+
+.clear-filter-btn{
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 2rem;
+    margin-top: -25px;
+    background-color: #ef4444;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+}
+
+.clear-filter-btn:hover{
+    cursor: pointer;
+    background-color: #4ade80;
+}
+
+
+/* .filter-category {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.4rem;
+
+      button {
+        border: none;
+        background-color: ${({ theme }) => theme.colors.white};
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.btn};
+        }
+      }
+
+      .active {
+        border-bottom: 1px solid #000;
+        color: ${({ theme }) => theme.colors.btn};
+      }
+    }
+  } */

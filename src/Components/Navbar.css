@@ -11,6 +11,7 @@
     height: 100px;
     background-color: black;
     color: white;
+    font-family: "WestgateRegular";
 }
 
 .nav-logo{
@@ -59,7 +60,7 @@
 .sign-in{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 35px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;

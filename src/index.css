@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "WestgateRegular";
+  src: local("WestgateRegular"),url("./Fonts/Westgate-Regular.otf") format("truetype");
+  /* font-weight: bold;
+  font-size: 100px; */
+}
