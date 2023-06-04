@@ -3,11 +3,13 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTime, faBar} from '@fortawesome/free-solid-svg-icons';
+import { useAuthContext } from '../Context/AuthContext';
 
 export const Navbar = () => {
     let logoIcon = require('../Images/syed-arcade.png');
 
     const [isMobile, setIsMobile] = useState(false);
+    const {token} = useAuthContext();
 
     const hamburgerHandler = () => {
         
@@ -31,9 +33,13 @@ export const Navbar = () => {
                 <Link to="/wishlist" className="wishlist">
                     <li> Wishlist </li>
                 </Link>
+                
+                {
+                    token ? <Link to="/userprofile" className='sign-in'><li> Profile </li></Link>:
+                
                 <Link to="/login" className="sign-in">
                     <li> Sign In </li>
-                </Link>    
+                </Link>}    
             </ul>
         <button className="mobile-menu-icon" onClick={hamburgerHandler}> {isMobile ? "cross" : "hamburger"}</button>
         </nav>

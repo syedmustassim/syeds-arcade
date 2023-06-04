@@ -8,6 +8,8 @@ import { Cart } from "./Pages/Cart";
 import { Wishlist } from "./Pages/Wishlist";
 import ProductDetail from "./Pages/ProductDetail";
 import Login from "./Pages/Login";
+import SignUp from "./Pages/SignUp";
+import UserProfile from "./Pages/UserProfile";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <Route path="/" element={<Home/>}></Route>
       <Route path="/products/:productId" element={<ProductDetail />}></Route>
       <Route path="/login" element={<Login/>}></Route>
+      <Route path="/signup" element ={<SignUp/>}></Route>
+      <Route path="/userprofile" element={<UserProfile/>}></Route>
      </Routes>
 
     </div>
