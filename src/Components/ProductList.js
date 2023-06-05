@@ -1,15 +1,21 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFilterContext } from "../Context/FilterContext";
 import './ProductList.css'
+import { useAuthContext } from "../Context/AuthContext";
+import { useCart } from "../Context/CartContext";
+
 
 const ProductList = () =>{
 
     const {filterProducts} = useFilterContext();
     
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     // const goTo = () =>{
     //     navigate("/cart")
     // }
+
+    const {token} = useAuthContext();
+    const {addToCart, findItemInCart} = useCart();
 
     return(
         <div className="flex-container">
@@ -32,7 +38,7 @@ const ProductList = () =>{
                                 </NavLink>
                                 
                                 <div className="btn-container">
-                                    <button className="btn-card"> Add to Cart</button>
+                                    <button className="btn-card" onClick={() => addToCart(item)} > {token ? "Go to cart" : "Add to Cart"}</button>
                                     <button className="btn-card"> Add to Wishlist</button>
                                 </div>
                             </div>

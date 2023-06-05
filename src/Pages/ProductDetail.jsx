@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext";
+import { useCart } from "../Context/CartContext";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
@@ -21,6 +22,7 @@ const ProductDetail = () => {
     const navigate = useNavigate();
     const {productId} = useParams();
     const {products} = useProductContext();
+    const {addToCart} = useCart()
 
     const selectedProduct = products.find((item) => item.id === productId)
 
@@ -85,7 +87,7 @@ const ProductDetail = () => {
                 <div className="product-detail-secondary-container">
                     <img src={selectedProduct.image_link} alt="" width="250px" />
                     <h3>Price: INR {selectedProduct.price}</h3>
-                    <button className="product-detail-cart-btn" onClick={() => isLoggedIn ? navigate('/cart') : navigate('/login')}>Add to Cart</button>
+                    <button className="product-detail-cart-btn" onClick={() => addToCart(selectedProduct)}>Add to Cart</button>
                     <button className="product-detail-wishlist-btn">Add to Wishlist</button>
                     <h3>Publisher: {selectedProduct.publisher}</h3>
                 </div>

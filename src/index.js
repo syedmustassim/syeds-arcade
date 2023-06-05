@@ -8,6 +8,7 @@ import './Fonts/Westgate-Regular.otf'
 import AppProvider from "./Context/ProductContext";
 import { FilterContextProvider } from "./Context/FilterContext";
 import AuthProvider from "./Context/AuthContext";
+import { CartProvider } from "./Context/CartContext";
 
 // Call make Server
 makeServer();
@@ -19,7 +20,9 @@ root.render(
       <AuthProvider>
       <AppProvider>
         <FilterContextProvider>
+          <CartProvider>
           <App />
+          </CartProvider>
         </FilterContextProvider>
       </AppProvider>
       </AuthProvider>
