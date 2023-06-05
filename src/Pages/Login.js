@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {useState} from "react"
 
 import { Footer } from "../Components/Footer";
@@ -76,15 +76,29 @@ const Login = () => {
         <div>
             <Navbar/>
             <div className="login-container">
+                <div className="login-form-container">
                 <h1 className="login-heading"> Login Page </h1>
-                
-                <label> Email Address</label>
-                <input type="email" placeholder="enter email" value={userData.email} onChange={(e) => setUserData({...userData, email: e.target.value})} />
-                <label> Enter Password</label>
-                <input type="password" placeholder="password" value={userData.password} onChange={(e) => setUserData({...userData, password: e.target.value}) }/>
-                <button onClick={handleLogin}>Log in</button>
-                <button onClick={handleGuestLogin}>Guest login</button>
-                <NavLink to="/signup"> <h4>Don't have an account? Sign up here</h4></NavLink>
+                <div className="login-second-container">
+                    <div className="login-text-field">
+                        <input type="email" value={userData.email} onChange={(e) => setUserData({...userData, email: e.target.value})} />
+                        <span></span>
+                        <label> Email Address</label>
+                    </div>  
+                    <div className="login-text-field">              
+                        <input type="password" value={userData.password} onChange={(e) => setUserData({...userData, password: e.target.value}) }/>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+               
+                    <button onClick={handleLogin} className="login-btn-main">Log in</button>
+                    <button onClick={handleGuestLogin} className="login-guest-btn">Guest login</button>
+            
+                   
+                    <div className="login-last-container">
+                        <Link to="/signup" style={{textDecoration: "none"}}> <h4>Don't have an account? Sign up here</h4></Link>
+                    </div>
+                </div>
+                </div>
             </div>
             <Footer/>
         </div>

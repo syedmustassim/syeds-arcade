@@ -21,7 +21,6 @@ const ProductList = () =>{
 
     return(
         <div className="flex-container">
-            {/* <h3> Games available: {filterProducts.length} </h3> */}
             {   filterProducts.length === 0 ? <div> <h1> No products found </h1> </div> :
                 filterProducts.map((item) => {
                     const {id,image_link,title,price,year,rating,categoryName} = item;

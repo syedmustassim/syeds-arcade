@@ -3,9 +3,122 @@
     color: white;
     text-align: center;
     padding: 10px;
+    height: 100vh;
+}
+
+.login-heading{
+    font-size: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid silver;
+    color: #bec4d0;
 }
 
 .login-btn{
     padding: 10px;
     margin: 1rem;
+}
+
+.login-form-container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    /* background-color: rgb(50, 50, 150); */
+    border-radius: 10px;
+}
+
+.login-second-container{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.login-text-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 40px 0;
+}
+
+.login-text-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.login-text-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 25px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-text-field span::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.login-text-field input:focus ~ label{
+    top: -5px;
+    color: #2691d9;
+    /* color: white; */
+}
+
+.login-text-field input:focus ~ span::before{
+    width: 100%;
+}
+
+.login-btn-main{
+    padding: 10px;
+    font-size: 22px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #15c0e3;
+    border: 1px solid #15c0e3;
+    background: black;
+    transition: 0.5s;
+}
+
+.login-guest-btn{
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #1ca7ab;
+    border: 1px solid #1ca7ab;
+    background: black;
+    transition: 0.5s;
+}
+
+.login-btn-main:hover{
+    cursor: pointer;
+    border: 1px solid #15c0e3;
+    background-color: #15c0e3;
+    color: black;
+}
+
+.login-guest-btn:hover{
+    cursor: pointer;
+    border: 1px solid #1ca7ab;
+    background-color: #1ca7ab;
+    color: black;
+}
+
+.login-last-container h4{
+    font-size: 25px;
+    color: #c04a4a
 }
