@@ -3,6 +3,7 @@ import { useFilterContext } from "../Context/FilterContext";
 import './ProductList.css'
 import { useAuthContext } from "../Context/AuthContext";
 import { useCart } from "../Context/CartContext";
+import { useWishlist } from "../Context/WishlistContext";
 
 
 const ProductList = () =>{
@@ -16,6 +17,7 @@ const ProductList = () =>{
 
     const {token} = useAuthContext();
     const {addToCart, findItemInCart} = useCart();
+    const {addToWishlist} = useWishlist();
 
     return(
         <div className="flex-container">
@@ -39,7 +41,7 @@ const ProductList = () =>{
                                 
                                 <div className="btn-container">
                                     <button className="btn-card" onClick={() => addToCart(item)} > {token ? "Go to cart" : "Add to Cart"}</button>
-                                    <button className="btn-card"> Add to Wishlist</button>
+                                    <button className="btn-card" onClick={() => addToWishlist(item)}> Add to Wishlist</button>
                                 </div>
                             </div>
                             </div>

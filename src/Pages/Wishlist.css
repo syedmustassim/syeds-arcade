@@ -1,18 +1,17 @@
-.cart-container{ 
+.wishlist-container{ 
     background-color: black;
     color: white;
-    display: grid;
-    grid-template-columns: 70% 30%;
+    height: 100%;
     /* height: 100vh; */
 }
 
-.cart-heading{
+.wishlist-heading{
     text-align: center;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 40px;
 }
 
-.cart-card{
+.wishlist-card{
     border: 0.125rem solid white;
     display: flex;
     align-items: center;
@@ -25,16 +24,16 @@
 
 }
 
-.cart-title{
+.wishlist-title{
     padding-top: 10px;
 }
 
-.cart-card img {
+.wishlist-card img {
     width: 300px;
     border-radius: 18px;
   }
 
-  .card-details {
+  .wishlist-details {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
@@ -43,11 +42,11 @@
     transition: 0.4s;
   }
 
-  .cart-card-btn{
+  .wishlist-card-btn{
     display: flex;
   }
 
-  .cart-card-btn button{
+  .wishlist-card-btn button{
     padding: 10px;
     color: white;
     background: black;
@@ -57,105 +56,44 @@
     border-radius: 10px;
   }
 
-  .cart-card:hover {
+  .wishlist-card:hover {
     cursor: pointer;
     border: 0.125rem solid #00a3d5;
     box-shadow: 0 0 2rem #00a3d5;
     z-index: 999;
   }
 
-  .cart-remove-btn{
+  .wishlist-remove-btn{
     transition: 0.6s;
     font-size: 15px;
   }
 
-  .cart-wishlist-btn{
+  .wishlist-cart-btn{
     transition: 0.6s;
   }
 
-  .cart-remove-btn:hover{
+  .wishlist-remove-btn:hover{
     cursor: pointer;
     background-color: #d34848;
     border: 0.125rem solid #d34848;
   }
 
-  .cart-wishlist-btn:hover{
+  .wishlist-cart-btn:hover{
     cursor: pointer;
     background-color: #1ca7ab;
     border: 0.125rem solid #1ca7ab;
   }
 
-.cart-second-container{
-    height: 100vh;
-    top: 0;
-    position: sticky;
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.cart-price-container{
-    border: 1px solid #00a3d5;
-    margin-top: 110px;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 1rem #00a3d5;
-}
-
-.cart-price-heading{
-    padding-bottom: 20px;
-    font-size: 28px;
-}
-
-.cart-price-h3{
-    padding: 20px 0 20px 0;
-    font-size: 25px
-}
-
-.cart-price-content{
-    padding-top: 20px;
-}
-
-.cart-price-content h3{
-    font-size: 25px;
-    padding-bottom: 25px;
-}
-
-.cart-price-content h2{
-    font-size: 25px;
-    padding-bottom: 20px;
-    color: #17ced4;
-}
-
-.cart-price-container button{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 19px;
-    outline: none;
-    transition: 0.4s;
-}
-
-.cart-price-container button:hover{
-    cursor: pointer;
-    background-color: #16cd68;
-    color: black;
-}
-
-.cart-no-items{
+.wishlist-no-items{
     padding-top: 30px;
+    text-align: center;
 }
 
-.cart-no-items h1{
+.wishlist-no-items h1{
     padding-bottom: 20px;
+    font-size: 30px;
 }
-.cart-no-items-img{
-  height: 500px;
-  /* padding-left: 250px; */
-  /* width: 500px; */
-}
-.cart-browse-btn{
+.wishlist-browse-btn{
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -165,7 +103,7 @@
     transition: 0.4s;
 }
 
-.cart-browse-btn:hover{
+.wishlist-browse-btn:hover{
     cursor: pointer;
     background: transparent;
     color: #16cd99;

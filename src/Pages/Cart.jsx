@@ -11,7 +11,7 @@ import CartPrice from "../Components/CartPrice"
 export const Cart = () => {
 
     const {cartState: {cart}, loading} = useCart();
-    console.log(cart)
+    const gameIcon = require('../Images/one-more-game.png')
     return(
         <div>
             <Navbar/>
@@ -29,7 +29,8 @@ export const Cart = () => {
                             </div>
                         ) : (<div className="cart-no-items">
                                 <h1> No items in Cart! </h1>
-                                <Link to="/discover"> <button className="cart-browse-btn"> Discover games here </button></Link>
+                                <img src={gameIcon} alt="poster"className="cart-no-items-img"/>
+                                <div><Link to="/discover"> <button className="cart-browse-btn"> Discover games here </button></Link></div>
                             </div>)
                     }
                 </div>
