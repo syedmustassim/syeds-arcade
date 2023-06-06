@@ -64,15 +64,17 @@ export const addressReducer = (state,action) => {
         isAdded: true,
       };
 
-    case "ADDRESS_CANCEL_BUTTON_CLICKED": {
+    case "ADDRESS_CANCEL_BUTTON_CLICKED": 
+
       return {
         ...state,
         editAddressId: null,
         isAdded: false,
       };
-    }
+    
 
-    case "UPDATE_TO_ADDRESS": {
+    case "UPDATE_TO_ADDRESS": 
+
       const updateAddress = state.addresses.map((address) => {
         if (address.id === action.payload.id) {
           return {
@@ -87,23 +89,24 @@ export const addressReducer = (state,action) => {
         }
         return address;
       });
+      console.log(updateAddress, "pinfoienoie fien")
       return {
         ...state,
         editAddressId: null,
         addresses: updateAddress,
       };
-    }
+    
 
-    case "ADD_TO_ADDRESS": {
-      console.log(action.payload);
+    case "ADD_TO_ADDRESS": 
+
       return {
         ...state,
         isAdded: false,
         addresses: [...state.addresses, action.payload],
       };
-    }
+    
 
-    case "ADDRESS_DELETE_BUTTON": {
+    case "ADDRESS_DELETE_BUTTON": 
       const filteredAddresses = state.addresses.filter(
         (address) => address.id !== action.payload
       );
@@ -111,11 +114,11 @@ export const addressReducer = (state,action) => {
         ...state,
         addresses: filteredAddresses,
       };
-    }
+    
 
-    case "SELECT_ADDRESS": {
+    case "SELECT_ADDRESS": 
       return { ...state, selectedAddressId: action.payload };
-    }
+    
 
         default: 
             return state;

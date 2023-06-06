@@ -35,7 +35,7 @@ export const Navbar = () => {
                 </Link>
                 
                 {
-                    token ? <Link to="/userprofile" className='sign-in'><li> Profile </li></Link>:
+                    token ? <Link to="/profile/profile-info" className='sign-in'><li> Profile </li></Link>:
                 
                 <Link to="/login" className="sign-in">
                     <li> Sign In </li>

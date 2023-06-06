@@ -36,7 +36,7 @@ const Login = () => {
         if(data.encodedToken){
             localStorage.setItem("token", data.encodedToken)
             localStorage.setItem("user", JSON.stringify(data.foundUser));
-            navigate('/userprofile')
+            navigate('/profile')
             setToken(data.encodedToken);
             setProfile({
                 ...profile,
@@ -62,7 +62,7 @@ const Login = () => {
 
         localStorage.setItem("token", data.encodedToken)
         localStorage.setItem("user", JSON.stringify(data.foundUser))
-        navigate("/userprofile")
+        navigate("/profile")
         setToken(data.encodedToken)
         setProfile({
             ...profile,

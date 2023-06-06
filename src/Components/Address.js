@@ -2,6 +2,7 @@ import { useReducer } from "react"
 import { addressInitialState, addressReducer } from "../Reducer/addressReducer"
 import { AddressForm } from "./AddressForm";
 import { v4 as uuid } from "uuid";
+import './Address.css'
 
 export const Address = () => {
     const [state,dispatch] = useReducer(addressReducer, addressInitialState);
@@ -53,6 +54,7 @@ export const Address = () => {
                             const {id, name, phone, city, pin, profileState, addressText} = details;
 
                             const isEditing = state.editAddressId === id;
+
 
                             return(
                                 <div className="controller-container">

@@ -1,5 +1,6 @@
 import { useReducer, useState } from "react"
 import { addressInitialState, addressReducer } from "../Reducer/addressReducer"
+import './AddressForm.css'
 
 export const AddressForm = ({details}) => {
     const [detailsInput, setDetailsInput] = useState({
@@ -77,7 +78,7 @@ export const AddressForm = ({details}) => {
       };
 
     return(
-        <form className="form-input" onSubmit={handleSubmit}>
+    <form className="form-input" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="form-column">
           <input

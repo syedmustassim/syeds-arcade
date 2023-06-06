@@ -4,12 +4,13 @@ import { Navbar } from "../Components/Navbar"
 import { ProfileNavbar } from "../Components/ProfileNavbar";
 import { ProfileInfo } from "../Components/ProfileInfo";
 import { Address } from "../Components/Address";
+import '../Components/Profile.css'
 
 const UserProfile = () => {
     return(
         <div>
             <Navbar/>
-            <div>
+            <div className="main-profile">
                 <ProfileNavbar/>
                 <Routes>
                     <Route path="profile-info" element={<ProfileInfo/>}></Route>
