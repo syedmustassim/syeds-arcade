@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../Context/AuthContext"
 import { Navbar } from "../Components/Navbar";
 import { Footer } from "../Components/Footer";
+import './SignUp.css';
 
 const SignUp = () => {
     const {profile, setProfile, setToken, signUpData, setSignUpData} = useAuthContext();
@@ -53,23 +54,25 @@ const SignUp = () => {
     return(
         <div>
             <Navbar/>
-            <div >
+            <div className="signup-container">
                 <h1> Sign Up </h1>
+                <div className="signup-secondary-container">
                 <label>Name</label>
-                <input value={signUpData.name} type="text" placeholder="Bruce Wayne" onChange={(e) => handleInput(e, "name")}/>
+                <input value={signUpData.name} type="text" onChange={(e) => handleInput(e, "name")}/>
                 <label>Email address</label>
-                <input value={signUpData.email} type="email" placeholder="xyz@abc.com" onChange={(e) => handleInput(e, "email")} />
+                <input value={signUpData.email} type="email" onChange={(e) => handleInput(e, "email")} />
                 <label>Password</label>
-                <input value={signUpData.password} type="password" placeholder="*******" onChange={(e) => handleInput(e, "password")} />
+                <input value={signUpData.password} type="password" onChange={(e) => handleInput(e, "password")} />
                 <label>Confirm Password</label>
-                <input value={signUpData.confirmPassword} type="password" placeholder="*******" onChange={(e) => handleInput(e, "confirmPassword")}/>
+                <input value={signUpData.confirmPassword} type="password" onChange={(e) => handleInput(e, "confirmPassword")}/>
 
                 <div>
                     <button onClick={handleSignUp}>Create new Account</button>
                 </div>
 
                 <div>
-                    Already have an account? <Link to="/login">Sign in</Link>
+                    <h2>Already have an account? <Link to="/login" style={{textDecoration: "none"}}>Sign in</Link></h2>
+                </div>
                 </div>
             </div>
             <Footer/>
