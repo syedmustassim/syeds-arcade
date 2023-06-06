@@ -10,6 +10,10 @@ import ProductDetail from "./Pages/ProductDetail";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import UserProfile from "./Pages/UserProfile";
+import { Checkout } from "./Pages/Checkout";
+import { Action } from "./Pages/Action";
+import { RPG } from "./Pages/RPG";
+import { FPS } from "./Pages/FPS";
 
 
 function App() {
@@ -26,6 +30,10 @@ function App() {
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element ={<SignUp/>}></Route>
       <Route path="/profile/*" element={<UserProfile/>}></Route>
+      <Route path="/checkout" element={<RequiresAuth><Checkout/></RequiresAuth>}></Route>
+      <Route path="/action" element={<Action/>}></Route>
+      <Route path="/rpg" element={<RPG/>}></Route>
+      <Route path="/fps" element={<FPS/>}></Route>
      </Routes>
 
     </div>

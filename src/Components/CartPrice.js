@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../Context/CartContext"
 import '../Pages/Cart.css'
 
@@ -18,7 +19,7 @@ const CartPrice = () => {
             <h3>Shipping and delivery charges: Nil. It is on the house.</h3>
             <h2>Total amount: &#8377; {totalPrice}</h2>
             </div>
-            <button> Proceed to Checkout </button>
+            <Link to="/checkout"><button> Proceed to Checkout </button></Link>
         </div>
     )
 }

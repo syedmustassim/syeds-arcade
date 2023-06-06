@@ -77,7 +77,7 @@ export const Address = () => {
                                         </div>
                                         <div className="address-section">
                                           <p>
-                                            <b>Address:</b>: {addressText}
+                                            <b>Address:</b> {addressText}
                                           </p>
                                         </div>
                                         <div className="address-footer">

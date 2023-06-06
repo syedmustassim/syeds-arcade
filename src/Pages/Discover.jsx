@@ -9,11 +9,13 @@ import { useFilterContext } from "../Context/FilterContext"
 
 export const Discover = () => {
 
+    const {filterProducts} = useFilterContext();
+
     return(
         <div>
             <Navbar/>
             <div className="discover-body">
-                <h1 className="discover-heading"> Discover our best games here</h1>
+                <h1 className="discover-heading"> Discover our best games</h1>
             <div className="container grid grid-filter-column">
                 <div className="filter">
                     <FilterSection/>
@@ -25,7 +27,7 @@ export const Discover = () => {
 
                     </div> */}
                     <div className="main-product">
-                        <ProductList/>
+                        <ProductList filterProducts={filterProducts}/>
 
                     </div>    
                 </section>

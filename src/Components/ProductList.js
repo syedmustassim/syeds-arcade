@@ -6,9 +6,9 @@ import { useCart } from "../Context/CartContext";
 import { useWishlist } from "../Context/WishlistContext";
 
 
-const ProductList = () =>{
+const ProductList = ({filterProducts}) =>{
 
-    const {filterProducts} = useFilterContext();
+    // const {filterProducts} = useFilterContext();
     
     const navigate = useNavigate()
     // const goTo = () =>{

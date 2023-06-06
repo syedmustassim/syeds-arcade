@@ -1,0 +1,88 @@
+.checkout-main{
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.checkout-heading{
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.checkout-heading h1{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.checkout-second-container{
+    /* height: 100vh; */
+    top: 0;
+    position: sticky;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Order details CSS */
+
+.order-details-container{
+    border: 1px solid #00a3d5;
+    margin-top: 110px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem #00a3d5;
+}
+
+.order-details-heading{
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.order-details-h3{
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+    list-style: none;
+}
+
+.order-details-list{
+    list-style: none;
+    padding: 10px;
+}
+
+.order-price-content{
+    padding-top: 20px;
+}
+
+.order-price-content h3{
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.order-price-content h2{
+    font-size: 25px;
+    padding: 20px 0 10px 0;
+    color: #17ced4;
+}
+
+.order-price-content p {
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(24, 209, 135)
+}
+
+.order-details-container button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.order-details-container button:hover{
+    cursor: pointer;
+    background-color: #16cd68;
+    color: black;
+}

@@ -1,0 +1,27 @@
+.featured-container{
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.featured-container-heading{
+    text-align: center;
+    margin-left: 30px;
+    /* font-size: 100px; */
+    /* color: rgb(211, 78, 78);
+    padding-top: 50vh; */
+    position: sticky;
+    top: 0;
+}
+
+.featured-container-heading h1{
+    font-size: 100px;
+    color: rgb(211, 78, 78);
+}
+
+.featured-container-heading h2{
+    font-size: 30px;
+    color: rgb(211, 78, 78);
+}

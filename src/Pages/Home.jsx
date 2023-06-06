@@ -2,6 +2,7 @@ import React from "react"
 import './Home.css'
 import { Navbar } from "../Components/Navbar"
 import { Footer } from "../Components/Footer"
+import { Link } from "react-router-dom"
 
 export const Home = () => {
 
@@ -19,6 +20,7 @@ export const Home = () => {
                 <h1> Welcome Gamers, to Syed's Arcade. </h1>
                 <br/>
                 <h2> Curated games for you </h2>
+                <Link to="/discover"><button>Explore games</button></Link>
                 {/* <input placeholder="Search"/> */}
                 </div>
             </div>
@@ -35,7 +37,7 @@ export const Home = () => {
                         <p className="home-card-info">
                             Immerse yourself into the best action games that are on the market. These are games of genre that emphasize physical challenges, including hand-eye coordination and reaction times. We have included only the games that offer good narratives.
                         </p>
-                        <button className="home-card-btn">View Games</button>
+                        <Link to="/action"><button className="home-card-btn">View Games</button></Link>
                     </div>
                 </div>
 
@@ -48,7 +50,7 @@ export const Home = () => {
                         <p className="home-card-info">
                             RPGs are role playing games. These are games where YOU assume the role of a character that you can customize as you take on a ficitional setting. Your decisions, lead to multiple outcomes and different story narratives. 
                         </p>
-                        <button className="home-card-btn">View Games</button>
+                        <Link to="/rpg"><button className="home-card-btn">View Games</button></Link>
                     </div>
                 </div>
 
@@ -61,7 +63,7 @@ export const Home = () => {
                         <p className="home-card-info">
                             FPS are first person shooter games. Centered on a gun and other weapon-based combat in a first-person perspective, with the player experiencing the action through the eyes of the protagonist who is armed in a three-dimensional space. 
                         </p>
-                        <button className="home-card-btn">View Games</button>
+                        <Link to="/fps"><button className="home-card-btn">View Games</button></Link>
                     </div>
                 </div>
             </div>

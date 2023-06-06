@@ -28,17 +28,26 @@
     color: navajowhite;
 }
 
-.img-text-section input{
-    width: 60%;
-    height: 40px;
+.img-text-section button{
+    width: 400px;
     border: 2px solid white;
     outline: none;
-    background: rgba(255, 255, 255, 0.173);
+    background: black;
     margin: 2.5rem;
-    border-radius: 3px;
+    border-radius: 13px;
     text-align: center;
-    color: white;
-    font-size: 20px;
+    color: navajowhite;
+    font-size: 26px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.img-text-section button:hover{
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.087);
 }
 
 ::placeholder{
