@@ -65,6 +65,7 @@ export const addressReducer = (state,action) => {
       };
 
     case "ADDRESS_CANCEL_BUTTON_CLICKED": 
+    console.log(state.editAddressId)
       return {
         ...state,
         editAddressId: null,
