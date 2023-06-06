@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../Context/AuthContext"
 import { Navbar } from "../Components/Navbar";
 import { Footer } from "../Components/Footer";
+import {toast } from 'react-toastify';
 import './SignUp.css';
 
 const SignUp = () => {

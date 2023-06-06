@@ -14,7 +14,6 @@ const addToCartService = async (product, encodedToken) =>
         headers: {authorization: encodedToken}
     })
 
-
 const removeFromCartService = async(productId, encodedToken) => 
     await axios.delete(`/api/user/cart/${productId}`,{
         headers: {authorization: encodedToken}

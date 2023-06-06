@@ -19,7 +19,6 @@ SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const ProductDetail = () => {
 
-    const {isLoggedIn} = useContext(AuthContext);
     const navigate = useNavigate();
     const {productId} = useParams();
     const {products} = useProductContext();
@@ -27,10 +26,6 @@ const ProductDetail = () => {
     const {addToWishlist} = useWishlist();
 
     const selectedProduct = products.find((item) => item.id === productId)
-
-    // const handlerCart = () => {
-    //     return isLoggedIn ? navigate('/cart') : navigate('/login')
-    // }
 
     return(
         <div>

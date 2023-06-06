@@ -42,10 +42,9 @@ export const Address = () => {
                                 <button className="add-address-btn" onClick={() => dispatch({type: "ADD_ADDRESS_BUTTON"})}>Add</button>
                             )
                     }
-
-                    {
-                        !state.isAdded && (<p className="add-address-label">Add New Address</p>)
-                    }
+                    
+                       { !state.isAdded && (<p className="add-address-label">Add New Address</p>) }
+                    
                 </div>
 
                 <ul className="list-stacked address-list">

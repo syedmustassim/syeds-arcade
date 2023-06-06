@@ -14,11 +14,13 @@ import { Checkout } from "./Pages/Checkout";
 import { Action } from "./Pages/Action";
 import { RPG } from "./Pages/RPG";
 import { FPS } from "./Pages/FPS";
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer position="top-right" theme="dark"/>
 
      <Routes>
       <Route path="/mockApi" element={<MockAPI/>}></Route>
@@ -35,7 +37,7 @@ function App() {
       <Route path="/rpg" element={<RPG/>}></Route>
       <Route path="/fps" element={<FPS/>}></Route>
      </Routes>
-
+    
     </div>
   );
 }

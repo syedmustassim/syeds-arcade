@@ -34,8 +34,7 @@ export const CartProvider = ({children}) => {
             if(status === 201){
                 cartDispatch({type: "ADD_TO_CART", payload: cart})
             }
-            console.log(cart, "cart item")
-
+               
         }catch(error){
             console.log(error)
         }finally{
