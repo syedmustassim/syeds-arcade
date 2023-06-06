@@ -39,7 +39,7 @@ const ProductList = ({filterProducts}) =>{
                                 </NavLink>
                                 
                                 <div className="btn-container">
-                                    <button className="btn-card" onClick={() => addToCart(item)} > {token ? "Go to cart" : "Add to Cart"}</button>
+                                    <button className="btn-card" onClick={() => token ? findItemInCart(item._id) ? navigate('/cart') : addToCart(item)  : navigate('/login')} > {token && findItemInCart(item._id) ? "Go to cart" : "Add to Cart"}</button>
                                     <button className="btn-card" onClick={() => addToWishlist(item)}> Add to Wishlist</button>
                                 </div>
                             </div>

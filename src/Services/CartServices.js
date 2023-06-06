@@ -20,5 +20,10 @@ const removeFromCartService = async(productId, encodedToken) =>
         headers: {authorization: encodedToken}
     })
 
+const updateQuantityService = async(productId, type,encodedToken) => 
+    await axios.post(`/api/user/cart/${productId}`,
+    {action: {type}},
+    {headers: {authorization: encodedToken}}
+    )
 
-export {getCartService, addToCartService, removeFromCartService}
+export {getCartService, addToCartService, removeFromCartService, updateQuantityService}

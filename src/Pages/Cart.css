@@ -171,3 +171,17 @@
     color: #16cd99;
     border: 1px solid #16cd99;
 }
+
+.quantity-minus{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #00a3d5;
+}
+
+.quantity-plus{
+  margin: 10px;
+  padding: 10px;
+  background-color: #1ca7ab;
+  color: white;
+}
