@@ -53,7 +53,7 @@ const SignUp = () => {
     return(
         <div>
             <Navbar/>
-            <div>
+            <div >
                 <h1> Sign Up </h1>
                 <label>Name</label>
                 <input value={signUpData.name} type="text" placeholder="Bruce Wayne" onChange={(e) => handleInput(e, "name")}/>
