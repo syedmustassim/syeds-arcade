@@ -71,7 +71,7 @@
     background: #2691d9;
 }
 
-.login-text-field input:focus ~ label{
+.login-text-field input:focus ~ label,.login-text-field input:valid ~ label{
     top: -5px;
     color: #2691d9;
     /* color: white; */
