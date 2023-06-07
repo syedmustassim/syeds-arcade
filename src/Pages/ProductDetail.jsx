@@ -83,7 +83,7 @@ const ProductDetail = () => {
                 
                 <div className="product-detail-secondary-container">
                     <img src={selectedProduct.image_link} alt="" width="250px" />
-                    <h3>Price: INR {selectedProduct.price}</h3>
+                    <h3>Price: &#8377; {selectedProduct.price}</h3>
                     <button className="product-detail-cart-btn" onClick={() => addToCart(selectedProduct)}>Add to Cart</button>
                     <button className="product-detail-wishlist-btn" onClick={() => addToWishlist(selectedProduct)}>Add to Wishlist</button>
                     <h3>Publisher: {selectedProduct.publisher}</h3>

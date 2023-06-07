@@ -20,8 +20,8 @@ export const Footer = () => {
                     </div>
                     <div className='sm_footer-links-div'>
                         <h4>Partners</h4>
-                        <Link to="/" className="footer-links"><p>Prince project</p></Link>
-                        <Link to="/" className="footer-links"><p>Shubham project</p></Link>
+                        <Link to="" className="footer-links"><p>Prince project</p></Link>
+                        <Link to="https://citystore.netlify.app/" className="footer-links"><p>City Store</p></Link>
                         <Link to="/" className="footer-links"><p>Yash project</p></Link>
                         <Link to="/" className="footer-links"><p>Gautam project</p></Link>
                     </div>
