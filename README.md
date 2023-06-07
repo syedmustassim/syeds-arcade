@@ -22,3 +22,5 @@
 <li>React Router</li>
 <li>MockBee backend</li>
 <li>React Hot toast</li>
+
+<p>The application is currently in its beta testing phase. Please be patient until we release the final build.</p> 
