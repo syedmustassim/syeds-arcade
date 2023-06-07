@@ -6,16 +6,11 @@ import { useCart } from "../Context/CartContext";
 import { useWishlist } from "../Context/WishlistContext";
 
 const ProductList = ({ filterProducts }) => {
-  // const {filterProducts} = useFilterContext();
-
   const navigate = useNavigate();
-  // const goTo = () =>{
-  //     navigate("/cart")
-  // }
 
   const { token } = useAuthContext();
   const { addToCart, findItemInCart } = useCart();
-  const { addToWishlist } = useWishlist();
+  const { addToWishlist, itemInWishlist } = useWishlist();
 
   return (
     <div className="flex-container">
@@ -63,10 +58,17 @@ const ProductList = ({ filterProducts }) => {
                     </button>
                     <button
                       className="btn-card"
-                      onClick={() => addToWishlist(item)}
+                      onClick={() =>
+                        token
+                          ? itemInWishlist(item._id)
+                            ? navigate("/wishlist")
+                            : addToWishlist(item)
+                          : navigate("/login")
+                      }
                     >
-                      {" "}
-                      Add to Wishlist
+                      {token && itemInWishlist(item._id)
+                        ? "Go to Wishlist"
+                        : "Add to Wishlist"}
                     </button>
                   </div>
                 </div>

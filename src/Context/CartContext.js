@@ -97,6 +97,11 @@ export const CartProvider = ({ children }) => {
       } = response;
 
       if (status === 200) {
+        toast.success(
+          actionType === "increment"
+            ? `Added another ${title} to cart!`
+            : `Removed one ${title} from cart!`
+        );
         cartDispatch({ type: "UPDATE_CART_QUANTITY", payload: cart });
       }
     } catch (error) {
